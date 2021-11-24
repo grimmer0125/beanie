@@ -35,7 +35,7 @@ class MigrationSettings(BaseSettings):
     connection_uri: str
     database_name: str
     path: Path
-    allow_index_dropping: bool = True
+    allow_index_dropping: bool = False
 
     class Config:
         env_prefix = "beanie_"
